@@ -8,10 +8,9 @@ Tested only on CachyOs with a SEMP TOSHIBA LED 32 POL. (MOD: TV LED V2 32L2400) 
 sudo pacman -S goverlay
 ```
 
-2. Setup Shaders Directory
-3. 
-Navigate to the vkBasalt shaders folder (create it if it doesn't exist):
+## 2. Setup Shaders Directory
 
+Navigate to the vkBasalt shaders folder (create it if it doesn't exist):
 ```bash
 mkdir -p ~/.local/share/vkBasalt/shaders
 cd ~/.local/share/vkBasalt/shaders
@@ -36,6 +35,13 @@ Open GOverlay.
 Go to the vkBasalt tab.
 
 Enable your desired filter and test it using VKCube.
+
+## 6. Enable on Steam
+
+For Steam games, Right Click your game, go to 'Properties' and in 'Lanch Options' type:
+```bash
+GDK_BACKEND=x11 ENABLE_VKBASALT=1 %command%
+```
 
 ## Shader Demos:
 
